@@ -1,0 +1,1 @@
+As a local resident, I want a ‘vague’ search, so that I can review eating options in my area based on my appetite.

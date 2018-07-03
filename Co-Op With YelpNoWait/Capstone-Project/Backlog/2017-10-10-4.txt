@@ -1,0 +1,1 @@
+As a business manager, I want a “utility” search feature, so that I can know which eateries around me offering delivery/catering services for company events.
