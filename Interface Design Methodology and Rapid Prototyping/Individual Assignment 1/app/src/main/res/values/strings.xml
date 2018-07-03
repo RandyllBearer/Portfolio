@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PostageCalculator</string>
+    <string name="ups_postage_calculator">UPS First Class Postage Calculator</string>
+    <string name="background">background</string>
+    <string name="header">header</string>
+    <string name="package_type">Package Type:</string>
+    <string name="package_weight">Package Weight:</string>
+    <string name="package_weight_hint">Ounces (0.0-13.0)</string>
+    <string name="calculate_cost_button">Calculate Cost:</string>
+
+    <id name = "header">header</id>
+    <id name = "package_type_text">package type text</id>
+    <id name = "package_weight_text">package weight text</id>
+    <id name = "package_weight_plaintext">package weight plaintext</id>
+    <id name = "calculate_cost_button">calculate cost</id>
+    <id name = "result">result</id>
+
+    <string-array name="package_type">
+        <item>Letter (Stamped)</item>
+        <item>Letter (Metered)</item>
+        <item>Large Envelope (Flats)</item>
+        <item>Package</item>
+    </string-array>
+
+</resources>
