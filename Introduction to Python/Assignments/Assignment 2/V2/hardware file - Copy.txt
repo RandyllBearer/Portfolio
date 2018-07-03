@@ -1,0 +1,6 @@
+0033142Screwdriver    Craftsman   4.99
+0149503Hammer         Craftsman   4.99
+0195540Sandpaper x500 Sandco     15.99
+4442233Mrbl Snk Med.  Sink Inc  150.00
+
+D:\School\Intro to Python\Assignments\Assignment 2\V2\hardware file.txt
