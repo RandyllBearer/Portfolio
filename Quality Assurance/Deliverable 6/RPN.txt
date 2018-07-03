@@ -1,0 +1,17 @@
+tokens: numbers + variables + operators + keywords	[delimited by whitespace]
+operators: +, -, /, *
+variables: single letter		[cannot be initialized without a value except in REPL mode]
+keywords: QUIT, LET, PRINT		[case insensitive]
+
+Numbers: Big Integer
+
+QUIT: Ends the program (anything after QUIT is ignored, so basically check for a quit before printing anything)
+LET: To be followed by a variable then an RPN expression, result stored in variable
+PRINT: Followed by an RPN expression, the result is sent to StdOut
+
+TWO MODES: File and REPL
+
+REPL:
+Read()
+Eval()
+Print()
