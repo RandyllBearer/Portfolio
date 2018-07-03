@@ -1,0 +1,6 @@
+1111432X098765432	[Ford, Fiesta, Price: 12500 / Mileage: 55000, Red]
+2222432X098765432	[Ford, Escape, Price: 35000 / Mileage: 54000, black]
+3333432X098765432	[Honda, Camry, Price: 20000 / Mileage: 54500, blue]
+4444432X098765432	[Subaru, Impreza, Price: 4000 / Mileage: 6000, Orange]	
+5555432X098765432	[Honda, Camry, Price: 25000 / Mileage: 53000, Green]
+8888432X098762222

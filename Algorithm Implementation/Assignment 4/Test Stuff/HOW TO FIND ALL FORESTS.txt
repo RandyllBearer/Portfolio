@@ -1,0 +1,22 @@
+EdgeList[][] = new EdgeList[numberOfVertices+1][numberOfVertices+1]	//2d edgelist
+int count = 0;
+
+
+while(numberOfVertices != numberOfEdges +1){
+	for loop from i <= numberOfVertices
+	EdgeList[count][i] = new EdgeList(); 
+	
+	find starting point{
+		if(adjacencyList[i].getListSize() > 0 && marked[i] == false){
+		        starting index = i;
+		}
+	}
+
+
+}
+
+return edgelist[][]
+
+--------------------
+
+when displaying mst[][], if mst[count][i] == null, then I is a vertex with no edges (SOLO COMPONENT)
