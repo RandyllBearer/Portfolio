@@ -1,0 +1,380 @@
+--Randyll Bearer	--RLB97@pitt.edu
+------------------------------
+--QUESTION 1
+------------------------------
+SQL> start rlb97-db.sql
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table dropped.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Table created.
+
+
+Commit complete.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+-----------------------------
+--QUESTION 2
+-----------------------------
+
+SQL> start rlb97-modify.sql
+--A.
+0 rows deleted.
+
+
+1 row created.
+
+
+Commit complete.
+
+--B.
+Materialized view created.
+
+
+1 row updated.
+
+
+2 rows updated.
+
+
+Materialized view dropped.
+
+
+Commit complete.
+
+--C.
+2 rows updated.
+
+
+Commit complete.
+
+-------------------------
+--QUESTION 3
+-------------------------
+SQL> start rlb97-view.sql
+
+--A.
+View created.
+
+
+Commit complete.
+
+--B.
+Materialized view dropped.
+
+
+Materialized view created.
+
+
+Commit complete.
+
+--C.
+View created.
+
+
+Commit complete.
+
+
+Materialized view dropped.
+
+
+Materialized view created.
+
+----------------------------
+--QUESTION 4
+----------------------------
+--A.
+
+LASTNAMEMAXPRESCRIPT                                                            
+--------------------                                                            
+Kurt                                                                            
+
+
+LASTNAMEMAXPRESCRIPT                                                            
+--------------------                                                            
+Kurt                                                                            
+
+--B.
+
+PCMSELLINGMORETHANFI                                                            
+--------------------                                                            
+Johnson and Johnson                                                             
+
+
+PCMSELLINGMORETHANFI                                                            
+--------------------                                                            
+Johnson and Johnson                                                             
+
+--C.
+
+LASTNAMEMAXPRESCRIPT                                                            
+--------------------                                                            
+Kurt                                                                            
+
+Elapsed: 00:00:00.00
+
+LASTNAMEMAXPRESCRIPT                                                            
+--------------------                                                            
+Kurt                                                                            
+
+Elapsed: 00:00:00.00
+
+PCMSELLINGMORETHANFI                                                            
+--------------------                                                            
+Johnson and Johnson                                                             
+
+Elapsed: 00:00:00.00
+
+PCMSELLINGMORETHANFI                                                            
+--------------------                                                            
+Johnson and Johnson                                                             
+
+Elapsed: 00:00:00.00
+
+--Insert the extra doctor/prescription date
+1 row created. 
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+...
+
+--D.
+
+--Refresh the materialized views
+PL/SQL procedure successfully completed.
+
+
+PL/SQL procedure successfully completed.
+
+
+LASTNAMEMAXPRESCRIPT                                                            
+--------------------                                                            
+Howard                                                                          
+
+Elapsed: 00:00:00.01
+
+LASTNAMEMAXPRESCRIPT                                                            
+--------------------                                                            
+Howard                                                                          
+
+Elapsed: 00:00:00.00
+
+PCMSELLINGMORETHANFI                                                            
+--------------------                                                            
+Johnson and Johnson                                                             
+
+Elapsed: 00:00:00.00
+
+PCMSELLINGMORETHANFI                                                            
+--------------------                                                            
+Johnson and Johnson                                                             
+
+Elapsed: 00:00:00.00
+
+--------------------------------
+--QUESTION 5
+--------------------------------
+
+SQL> start rlb97-trigger.sql
+
+--A.
+
+Trigger created.
+
+--B.
+
+Table dropped.
+
+
+Table created.
+
+
+Trigger created.
+
+SQL> spool off

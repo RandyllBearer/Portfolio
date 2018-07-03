@@ -1,0 +1,252 @@
+--Randyll Bearer			rlb97@pitt.edu
+--------------------------------------------
+--Question 3: Populate the database
+SQL> start rlb97-query.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+Commit complete.
+
+
+Commit complete.
+
+
+----------------------------------
+--Question 4: Queries
+--A
+PCP_LIC_NO PCP_LIC_ST                                                           
+---------- ----------                                                           
+                                                                                
+      1203 PA                                                                   
+      1202 OH                                                                   
+      1200 PA                                                                   
+      1201 PA                                                                   
+
+--B
+DOCTOR_LIC_NO DOCTOR_LIC NUMPRESCRIPTIONS AVG_QUANTITY                          
+------------- ---------- ---------------- ------------                          
+         1203 PA                        3           15                          
+         1204 PA                        1            5                          
+         1200 PA                        3   16.6666667                          
+         1202 OH                        2           10                          
+         1201 PA                        1           15                          
+
+--C
+LASTNAME             NUMPRESCRIPTIONS                                           
+-------------------- ----------------                                           
+Kurt                                5                                           
+Steward                             4                                           
+Johnson                             4                                           
+
+
+-------------------------------------
+--Question 5: Nested Queries
+--A
+LASTNAME             MAXQUANTITY                                                
+-------------------- -----------                                                
+Kurt                          20                                                
+Steward                       20                                                
+Johnson                       20                                                
+Calvin                        15                                                
+Robinson                       5                                                
+
+--B
+LASTNAME                                                                        
+--------------------                                                            
+Calvin                                                                          
+Robinson                                                                        
+
+--C
+LASTNAME                                                                        
+--------------------                                                            
+Johnson                                                                         
+
+----------------------------------------------------
+--Question 6
+--A
+DOCTOR_LIC_NO DOCTOR_LIC    PATIENT DRUG                   QUANTITY PRESCDATE   
+------------- ---------- ---------- -------------------- ---------- ---------   
+         1203 PA          888424247 Tylenol                      20 01-JAN-16   
+         1203 PA          927464820 Aspirin                      20 20-JUL-15   
+         1200 PA          246345645 Aspirin                      20 09-JUN-16   
+         1200 PA          765765666 Aspirin                      20 03-MAR-16   
+         1203 PA          246577767 AspirinB                     20 11-FEB-16   
+
+--B
+DOCTOR_LIC_NO DOCTOR_LIC    PATIENT DRUG                   QUANTITY PRESCDATE   
+------------- ---------- ---------- -------------------- ---------- ---------   
+         1201 PA          765765666 Tylenol                      15 14-FEB-16   
+         1202 OH          546746535 Motrin                       10 12-JAN-16   
+         1200 PA          765765666 Aspirin                      10 11-JAN-16   
+         1202 OH          546746535 Aspirin                      10 15-JUL-16   
+         1203 PA          246577767 Allegra                       5 23-JAN-16   
+
+--C
+DOCTOR_LIC_NO DOCTOR_LIC FIRSTNAME       MIDDLENAME      LASTNAME               
+------------- ---------- --------------- --------------- --------------------   
+SPECIALITY                     YEAROFEXPERIENCE                                 
+------------------------------ ----------------                                 
+         1202 OH         Alicia          A.              Johnson                
+Immunology                                   20                                 
+                                                                                
+         1203 PA         Thomas          J.              Kurt                   
+Ophthalmology                                15                                 
+                                                                                
+         1200 PA         John            K.              Steward                
+Internal Medicine                            10                                 
+                                                                                
+
+-----------------------------------------------
+--Question 7
+--A
+NAME                                                                            
+--------------------                                                            
+Motrin                                                                          
+Allegra                                                                         
+Aspirin                                                                         
+
+--B
+NAME                                                                            
+--------------------                                                            
+Pfizer                                                                          
+
+
+Commit complete.
+
+
+Recyclebin purged.
+
+SQL> SPOOL OFF

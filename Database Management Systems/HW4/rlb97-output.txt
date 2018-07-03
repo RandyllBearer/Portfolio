@@ -1,0 +1,295 @@
+--Randyll Bearer 			rlb97@pitt.edu
+--I had a much easier time reading this file by opening it with NotePad++, regular notepad didn't display line breaks
+
+SQL> start rlb97-query.sql
+
+-------------------------------------------------------------------
+--DISPLAY ALL TABLES
+
+DOCTOR_LIC_NO DOCTOR_LIC FIRSTNAME       MIDDLENAME      LASTNAME               
+------------- ---------- --------------- --------------- --------------------   
+SPECIALITY                     YEAROFEXPERIENCE                                 
+------------------------------ ----------------                                 
+         1200 PA         John            K.              Steward                
+Internal Medicine                            10                                 
+                                                                                
+         1201 PA         Richard         T.              Calvin                 
+Dermatology                                   5                                 
+                                                                                
+         1202 OH         Alicia          A.              Johnson                
+Immunology                                   20                                 
+                                                                                
+
+DOCTOR_LIC_NO DOCTOR_LIC FIRSTNAME       MIDDLENAME      LASTNAME               
+------------- ---------- --------------- --------------- --------------------   
+SPECIALITY                     YEAROFEXPERIENCE                                 
+------------------------------ ----------------                                 
+         1203 PA         Thomas          J.              Kurt                   
+Opthalmology                                 15                                 
+                                                                                
+         1204 PA         DANIEL                          Robinson               
+Pediatrics                                    9                                 
+                                                                                
+
+
+       SSN FIRSTNAME       MIDDLENAME      LASTNAME                             
+---------- --------------- --------------- --------------------                 
+ADDRESS                                                          DATEOFBIR      
+---------------------------------------------------------------- ---------      
+PCP_LIC_NO PCP_LIC_ST                                                           
+---------- ----------                                                           
+ 765765666 Michael         F               Cao                                  
+320 Fifth Avenue                                                 01-JAN-40      
+      1203 PA                                                                   
+                                                                                
+ 888424247 Tom             K               Louis                                
+310 Fifth Avenue                                                 05-FEB-21      
+      1203 PA                                                                   
+
+       SSN FIRSTNAME       MIDDLENAME      LASTNAME                             
+---------- --------------- --------------- --------------------                 
+ADDRESS                                                          DATEOFBIR      
+---------------------------------------------------------------- ---------      
+PCP_LIC_NO PCP_LIC_ST                                                           
+---------- ----------                                                           
+                                                                                
+ 546746535 Bill            A               Newton                               
+330 Fifth Avenue                                                 11-DEC-20      
+                                                                                
+                                                                                
+ 246577767 Richard         F               Kates                                
+340 Fifth Avenue                                                 03-DEC-28      
+
+       SSN FIRSTNAME       MIDDLENAME      LASTNAME                             
+---------- --------------- --------------- --------------------                 
+ADDRESS                                                          DATEOFBIR      
+---------------------------------------------------------------- ---------      
+PCP_LIC_NO PCP_LIC_ST                                                           
+---------- ----------                                                           
+      1201 PA                                                                   
+                                                                                
+ 246345645 Mary            M               Missy                                
+350 Fifth Avenue                                                 04-MAR-88      
+                                                                                
+                                                                                
+
+
+PCM_REGISTRATION     NAME                      PHONE                            
+-------------------- -------------------- ----------                            
+LIC1234              Johnson and Johnson  4122217889                            
+LIC2019              Pfizer               6518900071                            
+LIC1904              Roche                4518764902                            
+
+
+NAME                                                                            
+--------------------                                                            
+ADDRESS                                                               PHONE     
+---------------------------------------------------------------- ----------     
+Rite Aid                                                                        
+318 5th Ave                                                      4124346603     
+                                                                                
+Revco                                                                           
+242 5th Ave                                                      4125662619     
+                                                                                
+Mercy Health Center                                                             
+412 E.Commons                                                    4123234500     
+                                                                                
+
+
+NAME                 FORMULA                        MANUFACTURER_REGISTR        
+-------------------- ------------------------------ --------------------        
+SUGGESTMINPRICE                                                                 
+---------------                                                                 
+Tylenol              Tylenol Formula                LIC1234                     
+                                                                                
+                                                                                
+Aspirin              Aspirin Formula                LIC2019                     
+                                                                                
+                                                                                
+AspirinB             AspirinB Formula               LIC2019                     
+                                                                                
+                                                                                
+
+NAME                 FORMULA                        MANUFACTURER_REGISTR        
+-------------------- ------------------------------ --------------------        
+SUGGESTMINPRICE                                                                 
+---------------                                                                 
+Motrin               Motrin Formula                 LIC1904                     
+                                                                                
+                                                                                
+Allegra              Allegra Formula                LIC2019                     
+                                                                                
+                                                                                
+
+
+DOCTOR_LIC_NO DOCTOR_LIC    PATIENT DRUG                   QUANTITY P_DATE      
+------------- ---------- ---------- -------------------- ---------- ---------   
+    REFILL                                                                      
+----------                                                                      
+         1203 PA          888424247 Tylenol                      20 01-JAN-16   
+         3                                                                      
+                                                                                
+         1200 PA          765765666 Aspirin                      20 03-JAN-16   
+         2                                                                      
+                                                                                
+         1203 PA          246577767 AspirinB                     20 11-JAN-16   
+         1                                                                      
+                                                                                
+
+DOCTOR_LIC_NO DOCTOR_LIC    PATIENT DRUG                   QUANTITY P_DATE      
+------------- ---------- ---------- -------------------- ---------- ---------   
+    REFILL                                                                      
+----------                                                                      
+         1202 OH          546746535 Motrin                       10 12-JAN-16   
+         1                                                                      
+                                                                                
+         1201 PA          765765666 Tylenol                      15 14-JAN-16   
+         1                                                                      
+                                                                                
+         1203 PA          246577767 Allegra                       5 23-JAN-16   
+         1                                                                      
+                                                                                
+
+DOCTOR_LIC_NO DOCTOR_LIC    PATIENT DRUG                   QUANTITY P_DATE      
+------------- ---------- ---------- -------------------- ---------- ---------   
+    REFILL                                                                      
+----------                                                                      
+         1204 PA          246345645 Motrin                        5 13-JAN-16   
+         1                                                                      
+                                                                                
+         1202 OH          546746535 Aspirin                      10 15-JAN-16   
+         1                                                                      
+                                                                                
+         1200 PA          246345645 Aspirin                      20 09-JAN-16   
+         1                                                                      
+                                                                                
+
+DOCTOR_LIC_NO DOCTOR_LIC    PATIENT DRUG                   QUANTITY P_DATE      
+------------- ---------- ---------- -------------------- ---------- ---------   
+    REFILL                                                                      
+----------                                                                      
+         1200 PA          765765666 Aspirin                      10 11-JAN-16   
+         1                                                                      
+                                                                                
+
+10 rows selected.
+
+
+STORE                DRUG                      PRICE                            
+-------------------- -------------------- ----------                            
+Rite Aid             Tylenol                    8.29                            
+Rite Aid             AspirinB                      3                            
+
+
+STORE                MANUFACTURER_REGISTR STARTDATE ENDDATE                     
+-------------------- -------------------- --------- ---------                   
+Rite Aid             LIC1234              01-JAN-99 10-JAN-18                   
+Revco                LIC1904              02-JUL-10 01-JAN-20                   
+
+
+
+
+
+
+-------------------------------------------------------------------
+--Question 4. A.
+
+DRUG                                                                            
+--------------------                                                            
+Tylenol                                                                         
+
+
+
+
+
+
+-------------------------------------------------------------------
+--Question 4. B.
+
+       SSN                                                                      
+----------                                                                      
+ 546746535                                                                      
+
+ 
+ 
+ 
+ 
+ 
+--------------------------------------------------------------------
+--Question 4. C.
+
+NAME                                                                            
+--------------------                                                            
+Tylenol                                                                         
+
+
+
+
+
+
+---------------------------------------------------------------------
+--Question 4. D.
+
+       SSN NUMBERPRESCRIBED                                                     
+---------- ----------------                                                     
+ 765765666                3                                                     
+ 246345645                2                                                     
+ 888424247                1                                                     
+ 246577767                2                                                     
+ 546746535                2                                                     
+
+ 
+ 
+ 
+ 
+ 
+---------------------------------------------------------------------
+--Question 4. E.
+
+PATIENTSSN DOCTOR_LASTNAME                                                      
+---------- --------------------                                                 
+ 246577767 Calvin                                                               
+
+ 
+ 
+ 
+ 
+ 
+---------------------------------------------------------------------
+--Question 4. F.
+
+NAME                                                                            
+--------------------                                                            
+ADDRESS                                                          NUMBERDRUGSOLD 
+---------------------------------------------------------------- -------------- 
+Mercy Health Center                                                             
+412 E.Commons                                                                 0 
+                                                                                
+Rite Aid                                                                        
+318 5th Ave                                                                   2 
+                                                                                
+Revco                                                                           
+242 5th Ave                                                                   0 
+                                                                                
+
+																				
+																				
+																				
+																				
+																				
+-----------------------------------------------------------------------
+--Question 4. G.
+
+DRUG1                DRUG2                                                      
+-------------------- --------------------                                       
+Allegra              AspirinB                                                   
+Aspirin              Tylenol                                                    
+Aspirin              Motrin                                                     
+
+
+Commit complete.
+
+
+Recyclebin purged.
+
+SQL> SPOOL OFF
