@@ -1,0 +1,21 @@
+int		4 bytes
+short		2 bytes
+long		8 bytes
+long long	8 bytes
+unsigned int	4 bytes
+char		1 bytes
+float		4 bytes
+double		8 bytes
+long double	16 bytes
+
+Please enter the weight you'd like to convert: 
+Here is your weight on other planets:
+
+Mercury		38.000000
+Venus		91.000000
+Mars		38.000000
+Jupiter		254.000000
+Saturn		108.000000
+Uranus		91.000000
+Neptune		119.000000
+Pluto		6.000000
