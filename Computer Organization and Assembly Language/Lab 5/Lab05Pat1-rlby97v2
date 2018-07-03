@@ -1,0 +1,112 @@
+.data
+pleaseN: .asciiz "Please enter a number n:\n"
+pleaseK: .asciiz "Please enter a number k:\n"
+valueChoose: .asciiz "The value of choose is "
+
+.text
+#Ask user for n & k
+addi $v0, $zero, 4
+la $a0, pleaseN
+syscall
+addi $v0, $zero, 5
+syscall
+add $t0, $zero, $v0
+addi $v0, $zero, 4
+la $a0, pleaseK
+syscall
+addi $v0, $zero, 5
+syscall
+add $t1, $zero, $v0
+#Call choose procedure
+add $a0, $zero, $t0
+add $a1, $zero, $t1
+jal choose
+j exit
+
+choose:
+	recursive1:
+		addi $sp, $sp, -4
+		sw $ra, 0($sp)
+
+		beq $a1, $zero, return1 # Is K equal to 0?
+		beq $a0, $a1, return1Equal 	# Is n equal to k?
+		slt $t0, $a0, $a1
+		beq $t0, 1, return0	# Is n < k?
+	
+		subi $a0, $a0, 1 #n-1
+		addi $sp, $sp, -4
+		sw $a0, 0($sp)	# We will need to keep the original n-1 for the next recursive call
+		addi $sp, $sp, -4	
+		sw $a1, 0($sp)	# We will need to keep the original k for the next recursive call
+		subi $a1, $a1, 1 #k-1
+		jal choose
+		add $t9, $t9, $v0 #$t9 will be our running sum
+		
+		addi $sp, $sp, 4
+		lw $a1, 0($sp)
+		addi $sp, $sp, 4
+		lw $a0, 0($sp)
+		addi $sp, $sp, 8	
+		jal choose
+		add $t9, $t9, $v0   #Add the second recursive call to our sum 
+	
+	recursive2:
+		addi $sp, $sp, -4
+		sw $ra, 0($sp)
+
+		beq $a1, $zero, return1 # Is K equal to 0?
+		beq $a0, $a1, return1Equal 	# Is n equal to k?
+		slt $t0, $a0, $a1
+		beq $t0, 1, return0	# Is n < k?
+	
+		subi $a0, $a0, 1 #n-1
+		addi $sp, $sp, -4
+		sw $a0, 0($sp)	# We will need to keep the original n-1 for the next recursive call
+		addi $sp, $sp, -4	
+		sw $a1, 0($sp)	# We will need to keep the original k for the next recursive call
+		subi $a1, $a1, 1 #k-1
+		jal choose
+		add $t9, $t9, $v0 #$t9 will be our running sum
+		
+		addi $sp, $sp, 4
+		lw $a1, 0($sp)
+		addi $sp, $sp, 4
+		lw $a0, 0($sp)
+		addi $sp, $sp, 8	
+		jal choose
+		add $t9, $t9, $v0   #Add the second recursive call to our sum 
+	
+	return1:
+		addi $v0, $zero, 1
+		jr $ra
+	return1Equal:
+		addi $sp, $sp, 4
+		lw $a1, 0($sp)
+		addi $sp, $sp, 4
+		lw $a0, 0($sp)
+		addi $sp, $sp, -4
+		jr $ra	
+	return0:
+		addi $v0, $zero, 0
+		jr $ra
+	exitRecursion:
+		addi $v0, $t9, 1
+		addi $sp, $sp, 12
+		lw $ra, 0($sp)
+		j exit
+	
+exit:
+add $t0, $zero, $v0
+addi $v0, $zero, 4
+la $a0, valueChoose
+syscall
+addi $v0, $zero, 1
+add $a0, $zero, $t0
+syscall
+addi $v0, $zero, 10
+syscall
+		
+		
+		
+		
+		
