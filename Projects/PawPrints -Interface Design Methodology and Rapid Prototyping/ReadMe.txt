@@ -9,3 +9,9 @@ This projected was completed as part of a group assignment over three main stage
 Link to Google Drive folder containing the various documentation for the project, including consent forms for random user testing, presentations, and project proposals.
 
 https://drive.google.com/drive/folders/19R225guHY9jR6ac0MoM8RAflmMRHrp2m?usp=sharing
+
+-------------------
+
+Link to individual repository of the project, with functioning final APK.
+
+https://github.com/RandyllBearer/CS1635-Project
