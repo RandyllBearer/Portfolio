@@ -7,3 +7,7 @@ My group was comprised of two other fellow students, and we worked in constant c
 I lead multiple group round-table discussions concerning which voice-software and platform to use, presented multiple presentations on the status of our project, and helped code on the project itself.
 
 For this project we used the Google's Dialogflow framework to create a proof-of-concept voice-only Yelp navigation application for the Google Home.
+
+Link to Google Drive folder containing the various documentation of our project, from presentations to project proposals to midterm updates.:
+
+https://drive.google.com/drive/folders/0B-HKuQMovAywZG05NmxjYmhuRUU?usp=sharing
