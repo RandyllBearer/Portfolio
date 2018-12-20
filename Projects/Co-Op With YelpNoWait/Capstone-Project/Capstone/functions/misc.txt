@@ -1,0 +1,2 @@
+latitude/longitude not saving as globals
+rest not saving as globals
