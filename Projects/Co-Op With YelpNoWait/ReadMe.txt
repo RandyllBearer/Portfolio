@@ -11,3 +11,9 @@ For this project we used the Google's Dialogflow framework to create a proof-of-
 Link to Google Drive folder containing the various documentation of our project, from presentations to project proposals to midterm updates.:
 
 https://drive.google.com/drive/folders/0B-HKuQMovAywZG05NmxjYmhuRUU?usp=sharing
+
+------------------------------
+
+Link to individual repository of the Project, may contain more up-to-date code:
+
+https://github.com/RandyllBearer/Capstone-Project
