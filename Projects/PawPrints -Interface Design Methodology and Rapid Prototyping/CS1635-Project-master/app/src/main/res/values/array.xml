@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="filterNames">
+        <item>Distance</item>
+        <item>Temperament</item>
+    </string-array>
+    <string-array name="distances">
+        <item>0-25 Miles</item>
+        <item>25-50 Miles</item>
+        <item>50+ Miles</item>
+    </string-array>
+    <string-array name="temperaments">
+        <item>Not Friendly</item>
+        <item>Friendly</item>
+    </string-array>
+    <string-array name="petTypes">
+        <item>Dog</item>
+        <item>Cat</item>
+        <item>Other</item>
+    </string-array>
+</resources>
