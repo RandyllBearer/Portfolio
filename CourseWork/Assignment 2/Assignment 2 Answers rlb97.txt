@@ -1,0 +1,61 @@
+Randyll Bearer
+rlb97@pitt.edu
+Assignment 2 Answers
+
+A. Yes I do believe that a stack was an appropriate choice of data structure for the following reasons.  
+First off, the idea of a stack being First In Last Out (FILO) is congruent with the conditions we were required 
+to meet for the assignment.  The “Unfollow” method required the most recent follow to be the first one removed, 
+then the second most recent, etc... This is ideal for a stack because that is how a stack “pop” method works. 
+Furthermore, the “Following” method required the stack to return the most recent follows (Last In First Out), 
+which is also congruent with the properties of a stack.
+
+B. First off, I'm going to assume that published order = oldest to newest
+ 
+No, a linked list which adds nodes to the end of the chain would be a better option.  
+Sally wants to read in published order, which means that she wants First In First Out (FIFO). 
+This is possible with a linked list as long as new articles/nodes are always added to the end, 
+so that the chain goes in order from oldest to newest.  In a stack, the most recent article would 
+be “pushed” on top, and then that same recent article would be the first one “popped”, meaning that 
+Sally would be reading the articles in reversed order.
+
+C. So the first thing to do would be to iterate through the string adding alphabetical characters to the stack and disregarding punctuation.  
+Then, one would create a copy of this stack and set about reversing the order of the copy.  Then, iterate through each stack comparing the 
+“popped” items.  If they are all equal, then it is a palindrome.
+	
+While(i < stringlength){
+		if (StringCharacterI.equalsIgnoreCase(“a”){
+			stack.push(stringCharacterI);
+		elseif(StringCharacterI.equalsIgnoreCase(“b”){
+			stack.push(StringCharacterI);
+		…. ### May be easier to check if greater or less than certain ascii values
+		else{
+			do nothing} ### We don't care about puncuation
+	new Stack tempstack = stack
+	new Stack reversedStack = new Stack[tempstack.numberOfEntries()-1]
+	While(i < temstack.numberOfEntries()){
+		reversedStack.push(tempstack.pop());}
+	while(i < reversedStack.numberOfEntries()){
+		if(reversedStack.pop() == stack.pop()){
+			result = true;}
+		else{
+			result = false + break;}}
+	return result;
+
+D. The question says only to write the comments and method header so...
+/**
+* The purpose of this method is to remove without return the top N items from a stack. This 
+* method will update the current size of the stack to reflect changes
+* If amountToRemove is > stackToShrink.getSize(), the remove operation will not be completed
+* If amountToRemove is <= 0, the remove operation will not be completed
+* @param stackToShrink: The stack you would like to remove items from
+* @param amountToRemove: The amount of items you would like to remove from the top of stackToShrink
+*/
+public void removeAmount(T[] stackToShrink, int amountToRemove){
+....
+}
+
+E. Amortized cost calculates the Worst Possible Case Run-Time (If one condition takes longer than another, it will always satisfy the longer condition), 
+and its goal is to compute how long it takes to run an algorithm which contains computations which will happen, but maybe not happen every iteration 
+(I.E. doubling the size of an array when it gets full).  Amortized cost is calculated by stepping through an algorithm, counting the computations 
+required for each step (especially the steps which contain more work than others), and then dividing the total run-time by the amount of iterations done.  
+Amortized cost should be used in an analysis to compare worst-case scenarios between two or more algorithms which perform specific computations sometimes.  

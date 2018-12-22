@@ -1,0 +1,5 @@
+testing purposes:
+directory to go to: cd D:\School\Sem 3 (Sophomore - Fall)\Data Structures\Assignment 3
+.jar to compile:
+adress of test.small: java FriendsCoupon "D:\School\Sem 3 (Sophomore - Fall)\Data Structures\Assignment 3\a3examples\small.txt" 2
+large; java -Xss40000000000m FriendsCoupon "D:\School\Sem 3 (Sophomore - Fall)\Data Structures\Assignment 3\a3examples\large.txt" 9
