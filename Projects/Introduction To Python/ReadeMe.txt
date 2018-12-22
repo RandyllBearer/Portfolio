@@ -1,0 +1,7 @@
+#Introduction To Python
+
+First programming class I ever took, covered the learning of the Python language and the basics of Object Oriented Programming through multiple assignments and two projects.
+
+Project 1: "Trainyard Simulator": Basic text ui which displays a rail-line. The goal of this program is to be able to fill this rail-line with trains, move them to the end, without letting any of them crash into each other. Covered error-checking and corner-cases.
+
+Proejct 2: "Stock Game": Covers random-seeding. Text ui game which has you buy a stock, and then simulates the next 10 years of that stock, with each year allowing you to sell, buy more, or sit and wait. Goal of the game is to have as much money at the end of the ten years as possible.
