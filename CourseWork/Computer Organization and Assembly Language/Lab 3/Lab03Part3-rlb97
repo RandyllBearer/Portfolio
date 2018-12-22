@@ -1,0 +1,120 @@
+.data
+Array_A: .word 0xa1a2a3a4, 0xa5a6a7a8
+hexadecimalByte: 0x62
+hexadecimalHalf: 0x68
+hexadecimalWord: 0x78
+
+pleaseElement: .asciiz "Please enter element type ('w' - word, 'h' - half, 'b' - byte):\n" 
+hereOutput: .asciiz "\nHere is the output (adress, value in hexadecimal, value in decimal):"
+comma: .asciiz ", "
+newLine: .asciiz "\n"
+
+.text
+#Read in user character choice
+addi $v0, $zero, 4
+la $a0, pleaseElement
+syscall
+addi $v0, $zero, 12
+syscall
+move $t1, $v0
+
+addi $v0, $zero, 4
+la $a0, hereOutput
+syscall
+
+#decide what the user-choice is and send to appropriate block
+lw $t2, hexadecimalWord
+beq $t1, $t2, word
+lw $t2, hexadecimalHalf
+beq $t1, $t2, half
+lw $t2, hexadecimalByte
+beq $t1, $t2, byte
+
+word:
+	addi $t7, $zero, 0	#$t7 = index
+loop1:
+	beq $t7, 8, exit
+	la $t1, Array_A($t7)	#$t1 = address
+
+	addi $v0, $zero, 4
+	la $a0, newLine
+	syscall		# Print newLine
+	addi $v0, $zero, 34
+	add $a0, $zero, $t1
+	syscall		# Print Address
+	addi $v0, $zero, 4
+	la $a0, comma
+	syscall		# Print comma
+	addi $v0, $zero, 34
+	lw $a0, 0($t1)
+	syscall		# Print Hexadecimal
+	addi $v0, $zero, 4
+	la $a0, comma
+	syscall		# Print comma
+	addi $v0, $zero, 1
+	lw $a0, 0($t1)
+	syscall		# Print Decimal
+
+	addi $t7, $t7, 4	#increment $t7 by 4 bytes = 1 word
+	j loop1			#restart loop
+
+half:
+	addi $t7, $zero, 0
+loop2:
+	beq $t7, 8, exit
+	la $t1, Array_A($t7)
+	
+	addi $v0, $zero, 4
+	la $a0, newLine
+	syscall		# Print newLine
+	addi $v0, $zero, 34
+	add $a0, $zero, $t1
+	syscall		# Print Address
+	addi $v0, $zero, 4
+	la $a0, comma
+	syscall		# Print comma
+	addi $v0, $zero, 34
+	lhu $a0, 0($t1)
+	syscall		# Print Hexadecimal
+	addi $v0, $zero, 4
+	la $a0, comma
+	syscall		# Print comma
+	addi $v0, $zero, 1
+	lhu $a0, 0($t1)
+	syscall		# Print Decimal
+
+	addi $t7, $t7, 2	#increment $t7 by 2 bytes = 1/2 word
+	j loop2			#restart loop
+
+byte:
+	addi $t7, $zero, 0
+loop3:
+	beq $t7, 8, exit
+	la $t1, Array_A($t7)
+	
+	addi $v0, $zero, 4
+	la $a0, newLine
+	syscall		# Print newLine
+	addi $v0, $zero, 34
+	add $a0, $zero, $t1
+	syscall		# Print Address
+	addi $v0, $zero, 4
+	la $a0, comma
+	syscall		# Print comma
+	addi $v0, $zero, 34
+	lbu $a0, 0($t1)
+	syscall		# Print Hexadecimal
+	addi $v0, $zero, 4
+	la $a0, comma
+	syscall		# Print comma
+	addi $v0, $zero, 1
+	lbu $a0, 0($t1)
+	syscall		# Print Decimal
+
+	addi $t7, $t7, 1	#increment $t7 by 1 bytes = 1/4 word
+	j loop3			#restart loop
+
+
+exit:
+addi $v0, $zero, 10
+syscall
