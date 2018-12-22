@@ -1,0 +1,5 @@
+How many cats are in this image?
+
+Answer: 3
+
+Correct Answer: 3

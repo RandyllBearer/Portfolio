@@ -1,0 +1,4 @@
+LET a 100 100 +
+LET b 60 +
+LET c a b +
+PRINT c

@@ -1,1 +1,0 @@
-As a general user, I want a ‘direct’ search feature, so that I can get information about a certain location.

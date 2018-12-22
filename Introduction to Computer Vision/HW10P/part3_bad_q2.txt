@@ -1,5 +1,0 @@
-How many birds are in this image?
-
-Top answer was 3, secondary answers only further from accurate
-
-Real answer was 2

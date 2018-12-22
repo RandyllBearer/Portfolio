@@ -1,0 +1,35 @@
+Equals Methods: Just compare the names (not yield/price)
+toString: Print out fields in some proper way
+Naming: (use ones provided in description)
+Encapsulation: Deep copies
+Naming: Name class "Crop" and "Driver Class"
+What is difference between class/object?
+Definition of field?
+151 points (Make sure as standardized as possible)
+
+public Crop(){         // no args
+	Crop = "wheat";
+	yield = "2 Tons";
+	price = 3.50;
+}
+
+public Crop(String cropName, String yield, double price){	// Initialier
+	setCrop(cropName);
+	setYield(yield);
+	setPrice(price);
+}
+
+public Crop(Crop cropToCopy){		// Copier
+	setCrop(cropToCopy.getCropName());
+	setYield(cropToCopy.getCropYield());
+	setPrice(cropToCopy.getCropPrice());
+}
+
+public boolean equals(Crop secondCrop){   // Equals
+	return cropName.equalsIgnoreCase(secondCrop.cropName());
+}
+
+public string toString(){		// toString
+	return "Name of Crop = " + crop.cropName() + "\r\nYield of Crop = " crop.cropYield() + "\r\nPrice of Crop = " + crop.cropPrice());
+}
+
