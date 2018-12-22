@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context="edu.pitt.cs.cs1635.rlb97.pawprints.SearchOrPosting"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Would you like to..."
+        android:layout_marginBottom="28dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="Search Found Reports"
+        android:layout_gravity="center"
+        android:id="@+id/searchButton"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Missing Report"
+        android:layout_gravity="center"
+        android:id="@+id/postingButton"/>
+
+</LinearLayout>
