@@ -1,0 +1,4 @@
+How many trees are in this image?
+
+Number 1 result with confidence was 3
+I would say that there are 5

@@ -1,5 +1,0 @@
-Is this a picture of the ocean?
-
-Answer: Yes 73%
-
-Correct Answer: No

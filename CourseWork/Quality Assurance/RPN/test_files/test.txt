@@ -1,0 +1,4 @@
+LET a 4
+LET b 5
+PRINT a b +
+QUIT

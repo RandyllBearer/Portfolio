@@ -1,0 +1,5 @@
+java -jar ~/checkstyle/checkstyle-7.0-all.jar -c ./google_checks_modified.xml 
+java -jar "D:\School\Sem 7\QA\Deliverable 5\Pairwise\checkstyle-7.0-all.jar" -c ./google_checks_modified.xml Pairwise.java
+
+javac -cp ".;./junit-4.12.jar;./hamcrest-core-1.3.jar" *.java
+java -cp ".;./junit-4.12.jar;./hamcrest-core-1.3.jar" TestRunner

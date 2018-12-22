@@ -1,5 +1,0 @@
-Is this a comic book character?
-
-Answer: Yes
-
-Correct Answer: Yes

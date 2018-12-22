@@ -1,0 +1,5 @@
+LET A 1
+
+LET B 2
+
+PRINT A B +
