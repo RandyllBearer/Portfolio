@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="worldofsweets.CardPanelTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-30T00:29:06" hostname="Randy" time="0.063">
+  <properties/>
+  <testcase name="testSkipOnly" classname="worldofsweets.CardPanelTest" time="0.001"/>
+  <testcase name="testStringToCardCorrectType" classname="worldofsweets.CardPanelTest" time="0.01"/>
+  <testcase name="testTest" classname="worldofsweets.CardPanelTest" time="0.0"/>
+  <testcase name="testGetLastDrawnSingleAccurate" classname="worldofsweets.CardPanelTest" time="0.049"/>
+  <testcase name="testTimerStringGeneration" classname="worldofsweets.CardPanelTest" time="0.0"/>
+  <testcase name="testCardToStringCorrectType" classname="worldofsweets.CardPanelTest" time="0.0"/>
+  <testcase name="testCheckAmountSkip" classname="worldofsweets.CardPanelTest" time="0.0"/>
+  <testcase name="testTimerLoadSave" classname="worldofsweets.CardPanelTest" time="0.001"/>
+  <system-out><![CDATA[ERROR: Save File has been tampered with 874940f28e72eecbb7de0a2f817c1a908008e42ecbdf2f124b932d749c3d23c4
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
