@@ -1,0 +1,4 @@
+- Adjacency List- Straight Forward, an array of lists. Index 0 of the array holds all vertices adjacent to vertex 0. Linked List, constant time add to front
+Edge (v,w), add v to w's list and w to v's list [Each edge is represented twice]
+
+-Find shortest path on place to other: BFS (Breadth-First-Search)

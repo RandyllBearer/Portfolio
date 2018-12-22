@@ -1,0 +1,100 @@
+MyLZW.java compression results and comparison:
+
+all.tar	[2,960 KB]
+-------------------
+LZW.java	Compressed: 1,804 KB [RATIO = 1.641]
+
+MyLZW.java	N-Compressed: 1,731 KB [RATIO = 1.71]		R-Compressed: 1,151 KB [RATIO = 2.5717]		M-Compressed: 3,099 (this one seems odd) [RATIO = ]
+
+7-ZIP		Compressed: 810 KB [RATIO = 3.654]
+
+
+assig2.doc [85 KB]
+-------------------
+LZW.java	Compressed: 73 KB [1.16438]
+
+MyLZW.java	N-Compressed: 40 KB [2.125]	R-Compressed: 40 KB [2.125]	M-Compressed: 40 KB [2.125]
+
+7-ZIP		Compressed: 21 KB [4.0476]
+
+
+bmps.tar [1,080 KB]
+--------------------
+LZW.java	Compressed: 904 KB [1.19469]
+
+MyLZW.java	N-Compressed: 80 KB [13.5]	R-Compressed:80 KB [13.5]	M-Compressed:80 KB [13.5]
+
+7-ZIP		Compresed: 53 KB [20.377]
+
+
+code.txt [71 KB]
+---------------------
+LZW.java	Compressed: 31 KB [2.29]
+
+MyLZW.java	N-Compressed: 24 KB  [2.958]		R-Compressed: 24 KB [2.958] 	M-Compressed: 24 KB [2.958]
+
+7-ZIP		Compressed: 14 KB [5.0714]
+
+
+code2.txt [57 KB]
+-------------------
+LZW.java	Compressed: 24 KB [2.375]
+
+MyLZW.java	N-Compressed: 21 KB [2.7143]		R-Compressed: 21 KB [2.7143]		M-Compressed: 21 KB [2.7143]
+
+7-ZIP		Compressed: 13 KB [4.385]
+
+
+edit.exe [231 KB]
+-------------------
+LZW.java	Compressed: 245 KB [0.9429]
+
+MyLZW.java	N-Compressed: 153 KB [1.51]		R-Compressed: 149 KB [1.55]		M-Compressed: 153 KB [1.51]
+
+7-ZIP		Compressed: 97 KB [2.381]
+
+
+frosty.jpg [124 KB]
+-------------------
+LZW.java	Compressed: 174 KB [.7126]
+
+MyLZW.java	N-Compressed: 160 KB [0.775]		R-Compressed: 168 KB [0.738]		M-Compressed: 160 KB[0.775]
+
+7-ZIP		Compressed: 124 KB [1]
+
+
+gone_fishing.bmp [17 KB]
+-------------------
+LZW.java	Compressed: 10 KB [1.7]
+
+MyLZW.java	N-Compressed: 9 KB [1.889]		R-Compressed: 9 KB [1.889]		M-Compressed: 9KB [1.889]
+
+7-ZIP		Compressed: 8 KB [2.125]
+
+
+large.txt [1,193 KB]
+-------------------
+LZW.java	Compressed: 591 KB [2.0186] 
+
+MyLZW.java	N-Compressed: 491 KB [2.4297]		R-Compressed: 516 KB [2.312]		M-Compressed: 491 KB  [2.4297]
+
+7-ZIP		Compressed: 393 KB [3.036]
+
+
+Lego-big.gif [92 KB]
+-------------------
+LZW.java	Compressed: 126 KB [0.73]
+
+MyLZW.java	N-Compressed: 120 KB [0.766667]		R-Compressed: 120 KB [0.766667]		M-Compressed: 120 KB [0.766667]
+
+7-ZIP		Compressed: 91 KB [1.011]
+
+
+medium.txt [25 KB]
+-------------------
+LZW.java	Compressed: 13 KB [1.923]
+
+MyLZW.java	N-Compressed: 13 KB [1.9231]		R-Compressed: 13 KB [2.9231]		M-Compressed: 13 KB[2.9231]
+
+7-ZIP		Compressed: 11 KB [2.273]
+
