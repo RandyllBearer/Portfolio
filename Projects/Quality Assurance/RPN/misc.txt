@@ -1,0 +1,6 @@
+Checkstyle:
+java -jar "checkstyle-7.0-all.jar" -c ./google_checks_modified.xml RPN.java
+
+JUnit:
+javac -cp ".;./junit-4.12.jar;./hamcrest-core-1.3.jar;./mockito-core-1.10.19.jar" *.java
+java -cp ".;./junit-4.12.jar;./hamcrest-core-1.3.jar;./mockito-core-1.10.19.jar" TestRunner
