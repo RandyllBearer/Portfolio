@@ -1,0 +1,7 @@
+<script> javascript code </script> 
+//single-line
+/* multi-line */
+let (local scope, use like 99% of time), var (global scope, typically bad form)
+const (constant variable)
+Variables are dynamically typed
+Strings are '', "", or ``. `` allows for stuff like alert(`1 + 2 = ${1+2}`);

@@ -1,0 +1,18 @@
+C has no 'this' operator, instead pass the pointer to the struct itself.
+use -> to access the fields of a struct pointed to by a pointer.
+*p->value
+use . to access the fields of a struct
+p.value
+
+* is a pointer to struct, % gets a pointer from struct
+#include <stdlib.h> is VERY important
+If you called no mallocs, you need no frees
+
+Since C has no objects, functions don't belong to them, you just call function directly. No object.push(), but rather just push()
+Array pointers can change in pretty much no ways at all.
+
+
+
+
+
+

@@ -12,11 +12,20 @@
 
   <!--Script tag contains all javascript-->
   <!--
+  The following allows you to run javascript code from another file
   <script src="/path/to/script.js"></script>
   -->
   
   <script>
-    alert( 'Hello, world!' );
+	"use strict"; //I guess you're just supposed to use this, always at the top
+  
+    //Comment inside a script like this
+	/*
+	or this 
+	*/
+	let helloPhrase = "Hello World!";
+	
+    alert( helloPhrase );
   </script>
 
   <p>...After the script.</p>

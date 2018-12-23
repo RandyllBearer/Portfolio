@@ -23,8 +23,10 @@ void resizeStack(struct Stack *stack){
 	int numToCopy = stack->numItems;	//How many items we need to copy to the new Stack
 	int newCapacity = stack->capacity * 2;	//this is how many items the new array can old.
 	stack->capacity = newCapacity;
-	int *newArray = malloc(newCapacity * sizeof(int));	//create a double-sized array we will copy old elements into
+	//modified below
+	stack->currentStack = realloc(stack->currentStack, newCapacity * sizeof(int));
 	
+	/*
 	int i = 0;
 	while(i < numToCopy){	//Copy all the old elements over
 		newArray[i] = stack->currentStack[i];
@@ -32,7 +34,7 @@ void resizeStack(struct Stack *stack){
 	}
 	
 	stack->currentStack = newArray;
-	
+	*/
 }
 
 /*
@@ -60,7 +62,7 @@ int pop(struct Stack *stack){
 		printf("Hey Bozo, no pop'ing an empty stack, check your numItems next time.");
 		exit(-1);	//whoopsie, can't pop off an empty stack
 	}else{ //We can safely pop from this stack
-		int toReturn = stack->currentStack[stack->numItems - 1];
+		toReturn = stack->currentStack[stack->numItems - 1];
 		stack->numItems = stack->numItems - 1;	//Decrement # of items in Stack
 	}
 	
