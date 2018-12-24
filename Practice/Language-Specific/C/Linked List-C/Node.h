@@ -1,8 +1,8 @@
 /*
-	Node.c by Randyll Bearer 2018
+	Node.h by Randyll Bearer 2018
 	Simple implementation of a dynamic Doubly-Linked List data structure in C using Node structs
 	This was written as both a refresher on the Linked List data structure as well as C practice.
-	This Node.c is meant to be tested by its corresponding Driver.c implementation.
+	This Node.h is meant to be tested by its corresponding Driver.c implementation.
 */
 
 #include <stdlib.h>
@@ -18,7 +18,8 @@ struct Node{
 
 void printFromHere(struct Node *this){
 	while(this != NULL){	//Keep pointing to next node until NULL
-		printf(" This node contains %d ", this->data); //Print out data to the screen
+		printf(" This node contains %d \n", this->data); //Print out data to the screen
+		this = this->next;
 	}
 }
 

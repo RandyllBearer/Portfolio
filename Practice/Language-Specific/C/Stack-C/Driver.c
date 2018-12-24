@@ -16,7 +16,7 @@ int main(){
 	struct Stack myStack;	//Initializes a new Stack struct
 	
 	myStack.capacity = 2;
-	myStack.currentStack = malloc(myStack.capacity*sizeof(int));	//Allocates memory in stack for 2 ints.
+	myStack.currentStack = (int *)malloc(myStack.capacity*sizeof(int));	//Allocates memory in stack for 2 ints.
 	myStack.numItems = 0;
 	
 	
@@ -50,6 +50,6 @@ int main(){
 
 	printf("Just removed %d, there are now %d items in the Stack\n", justRemoved, getNumItems(&myStack));
 	
-	free(myStack.currentStack);
+	free(myStack.currentStack);	//always free a malloc
 }
 //End of File

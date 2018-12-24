@@ -1,7 +1,7 @@
 /*
 	Driver.c by Randyll Bearer 2018
 	Simple implementation of a dynamic Linked List data structure in C using Node structs
-	This Driver.c is meant to test its corresponding LinkedList.c implementation.
+	This Driver.c is meant to test its corresponding Node.h implementation.
 */
 
 #include <stdlib.h>
@@ -12,10 +12,10 @@
 int main(){
 	
 	//Initialize the Linked List
-	printf("Initializing Linked List...");
+	printf("Initializing Linked List...\n");
 	struct Node* first = NULL;	//We have NULL pointers, but don't have space allocated yet for them to point to
 	struct Node* second = NULL;
-	struct Node* third = NULL:
+	struct Node* third = NULL;
 	
 	first = (struct Node*)malloc(sizeof(struct Node));	//Now the pointers can point to an allocated/non-random space
 	second = (struct Node*)malloc(sizeof(struct Node));
@@ -24,7 +24,7 @@ int main(){
 	struct Node* current = first;	//This is the pointer we will use to traverse the linked list
 	
 	//Populate the Linked List
-	printf("Populating the Linked List with values...");
+	printf("Populating the Linked List with values...\n");
 	
 	//Link first node to second node
 	current->data = 1;		//set the data value of the node pointed to by current (first) to 1.
@@ -45,7 +45,7 @@ int main(){
 	current = first;	//point current back to start of Linked List
 	
 	//Print out the contents of the linked list in order
-	printf("Printing out the contents of the Linked List...");
+	printf("Printing out the contents of the Linked List...\n");
 	printFromHere(current);
 	
 	
