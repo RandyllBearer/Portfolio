@@ -47,7 +47,7 @@ class Stack{
 			throw("Can't pop() from an empty Stack you doofus!");
 			
 		}else{
-			let toReturn = this.items[this.numItems];
+			let toReturn = this.items[this.numItems-1];
 			this.numItems = this.numItems - 1;
 			return toReturn;
 			
