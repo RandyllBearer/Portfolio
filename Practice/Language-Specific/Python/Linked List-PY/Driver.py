@@ -23,7 +23,7 @@ class Driver:
 		third.previous = second
 		
 		#Print elements from first
-		first.printFromHere();
+		first.printFromHere()
 	
 	
 	if __name__ == '__main__':

@@ -4,19 +4,19 @@
 
 class Node:
 
-	next = None;
-	previous = None;
-	value = 0;
+	next = None
+	previous = None
+	value = 0
 	
 	def printFromHere(self):
-		current = self;
+		current = self
 		print("Printing from node containing value ", current.value)
 		
 		i = 0
 		while current is not None:
 			print("Node ", i, " contains value ", current.value)
-			current = current.next;
-			i = i + 1;
+			current = current.next
+			i = i + 1
 			
 		
 	
