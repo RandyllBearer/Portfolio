@@ -1,4 +1,3 @@
-
 # Stack.py by Randyll Bearer 2018
 # Practice for basic Python coding implementing a basic Stack data structure
 # To be used in conjuction with Driver.py
@@ -23,3 +22,5 @@ class Stack:
 	#Return how many items we currently have in the Stack
 	def getNumItems(self):
 		return self.numItems
+		
+#End of File

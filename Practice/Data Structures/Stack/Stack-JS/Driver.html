@@ -1,0 +1,46 @@
+<!--
+	Stack.js by Randyll Bearer
+	Simple Implementation of a dynamically resizing Stack in javascript
+	
+	Note: Output written to Console (f12 in chrome browser).
+-->
+
+<!DOCTYPE HTML>
+<html>
+
+<body>
+
+  <p>Before the script...</p>
+
+  
+  <!-- Run the Stack.js script -->
+  <script src="Stack.js"></script>
+
+  
+  <script>
+	"use strict"; //Keep it modern
+
+	//Create new Stack with capacity three
+	let myStack = new Stack(3);
+	
+	//Add Three items to the stack and test capacity
+	myStack.push(1);
+	myStack.push(2);
+	myStack.push(3);
+	console.log(`myStack can currently hold ${myStack.capacity} and is holding ${myStack.numItems}`);
+	
+	//Add one more item to the stack and test capacity
+	myStack.push(4);
+	console.log(`myStack can currently hold ${myStack.capacity} and is holding ${myStack.numItems}`);
+	
+	//Now pop an item and test
+	myStack.pop();
+	console.log(`myStack can currently hold ${myStack.capacity} and is holding ${myStack.numItems}`);
+	
+  </script>
+
+  <p>...After the script.</p>
+
+</body>
+
+</html>
