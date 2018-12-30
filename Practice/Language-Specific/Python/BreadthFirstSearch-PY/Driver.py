@@ -1,6 +1,6 @@
 # Driver.py by Randyll Bearer 2018
 # Basic program to test my implementation of Breadth-First-Search/Traversal
-# on an cyclic graph composed of nodes found in Node.py. The BFS algorithm
+# on a cyclic graph composed of nodes found in Node.py. The BFS algorithm
 # implemented here uses a Queue structure to keep track of remaining nodes to
 # visit. This queue structure can be found in Queue.py
 
@@ -33,7 +33,8 @@ class Driver:
 					n.visited = True;
 					myQueue.enqueue(n)
 					print("Node, ", current.value, " can reach new node ", n.value)
-	
+				else:
+					print("Node, ", current.value, " can reach node ", node.value, " but has already been visited.")
 
 	#Driver Code
 	
@@ -74,6 +75,6 @@ class Driver:
 
 	#Conduct the Breadth-First-Search
 	myRoot = myGraph.nodes[0]
-	breadthFirstSearch(myRoot)	#root = node 1 #HERE BE ERRORS
+	breadthFirstSearch(myRoot)	#root = node 1
 	
 #End of File
