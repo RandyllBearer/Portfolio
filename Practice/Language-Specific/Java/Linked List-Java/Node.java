@@ -1,5 +1,5 @@
 /*
-	Driver.java by Randyll Bearer 2018
+	Node.java by Randyll Bearer 2018
 	Node to be used in a basic doubly-linked list and tested by
 	Driver.java
 */
